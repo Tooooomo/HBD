@@ -1,5 +1,5 @@
 // 情報を入力
-const bd = [2222, 7, 15]; // 生まれた[年, 月, 日]を入力
+const bd = [2023, 7, 15]; // 生まれた[年, 月, 日]を入力
 const openAge = true; // 年齢を表示したいならtrue, 隠したいならfalseを入力
 const yourName = "とーも"; // "名前"を入力
 
