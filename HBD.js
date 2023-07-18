@@ -9,7 +9,11 @@ const today = new Date();
 // 年齢を計算する関数
 const calcAge = (bd, today) => {
   const bdDate = new Date(bd[0], bd[1] - 1, bd[2]);
-  const age = Math.floor((today - bdDate) / (1000 * 60 * 60 * 24 * 365.25));
+  const thisYearBd = new Date(today.getFullYear(), bd[1] - 1, bd[2]);
+  let age = today.getFullYear() - bdDate.getFullYear();
+  if (today < thisYearBd) {
+    age--;
+  }
   return age;
 };
 
